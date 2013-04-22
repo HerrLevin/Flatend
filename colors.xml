@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<colors>
+	<color name="red">
+		<hex>#e45129</hex>
+	</color>
+	<color name="lightblue">
+		<hex>#1587c8</hex>
+	</color>
+	<color name="lightgreen">
+		<hex>#7ea023</hex>
+	</color>
+	<color name="purple">
+		<hex>#8637ab</hex>
+	</color>
+	<color name="darkblue">
+		<hex>#3745ab</hex>
+	</color>
+	<color name="orange">
+		<hex>#e69e2c</hex>
+	</color>
+	<color name="darkgreen">
+		<hex>#347f07</hex>
+	</color>
+</colors>

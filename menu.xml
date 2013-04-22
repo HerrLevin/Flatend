@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<entries>
+	<entry module="welcome">
+		<name>Willkommen</name>
+		<color>red</color>
+	</entry>
+	<entry module="config">
+		<name>Konfiguration</name>
+		<color>lightblue</color>
+	</entry>
+	<entry module="colors">
+		<name>Farben</name>
+		<color>lightgreen</color>
+	</entry>
+	<entry module="license">
+		<name>Lizenz</name>
+		<color>purple</color>
+	</entry>
+	<entry module="tables">
+		<name>Tabellen</name>
+		<color>darkblue</color>
+	</entry>
+	<entry module="info">
+		<name>Informationen</name>
+		<color>orange</color>
+	</entry>
+	<entry module="contact">
+		<name>Kontakt</name>
+		<color>darkgreen</color>
+	</entry>
+</entries>
