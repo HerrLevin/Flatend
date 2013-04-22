@@ -6,6 +6,6 @@
 </p>
 <h2>Da stimmt was nicht!</h2>
 <p>
-	Du hast einen Fehler gefunden? Immer her damit! &Uuml;ber <a href="https://github.com/Flatend">unser GitHub-Projekt</a> kannst du uns &uuml;ber Fehler informieren oder Verbesserungsvorsch&auml;ge schicken.<br />
+	Du hast einen Fehler gefunden? Immer her damit! &Uuml;ber <a href="https://github.com/82OderSo/Flatend">unser GitHub-Projekt</a> kannst du uns &uuml;ber Fehler informieren oder Verbesserungsvorsch&auml;ge schicken.<br />
 	Mit deiner Hilfe werden wir Flatend erweitern und verbessern!
 </p>
