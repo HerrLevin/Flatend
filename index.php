@@ -13,15 +13,13 @@
 <head>
 	<title><?php echo GetConfig("pageTitle"); ?></title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<link rel="stylesheet" type="text/css" href="./src/style.css">
-	<link rel="stylesheet" type="text/css" href="./src/colors.css.php?module=<?php echo $module; ?>">
-	<style>
-		h1 {
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="./src/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/colors.css.php?module=<?php echo $module; ?>">
 	<link rel="shortcut icon" href="./src/img/favicon.ico" />
 	<meta name="viewport" content="width=1000, maximum-scale=1.0">
 	<link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:300,400" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="./src/js/dropdown.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -29,7 +27,19 @@
 			<div class="pageTitle"><a href="index.php"><?php echo GetConfig("pageTitle"); ?></a></div>
 			<div id="headerMenu">
 				<ul>
-					<li><a href="#" class="userDropdown"><?php echo GetConfig("dummyUser"); ?></a></li>
+					<li>
+						<a class="userDropdown" href="#"><?php echo GetConfig("dummyUser"); ?></a>
+						<ul class="dropdownMenu">
+							<div class="userOverview">
+								<div class="userPic" style="background-image: url('./src/img/dummyUser.png');"></div>
+								<?php echo GetConfig("dummyUser"); ?><br />
+								<span class="role">Administrator</span>
+							</div>
+							<li onclick="location.href='#'"><img src="./src/img/icons/cog_16x16.png" />Account</li>
+							<li onclick="location.href='#'"><img src="./src/img/icons/compass_16x16.png" />Hilfe</li>
+							<li onclick="location.href='#'"><img src="./src/img/icons/arrow_left_alt1_16x16.png" />Logout</li>
+						</ul>
+					</li>
 					<li><a href="#">Frontend</a></li>
 				</ul>
 			</div>
