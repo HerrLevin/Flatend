@@ -58,21 +58,6 @@ p {
 	margin-right: 17px;
 }
 
-.userDropdown:before {
-	content: '';
-	background-image: url('../img/userDropdown.png');
-	background-position: 0px 0px;
-	width: 12px;
-	height: 11px;
-	float: left;
-	margin-top: 3px;
-	margin-right: 10px;
-}
-
-.userDropdown:hover:before {
-	background-position: 0px 11px;
-}
-
 .userDropdown:after {
 	content: '';
 	width: 0;

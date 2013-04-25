@@ -14,6 +14,7 @@
 	<title><?php echo GetConfig("pageTitle"); ?></title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="./src/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/dynamic.css.php">
 	<link rel="stylesheet" type="text/css" href="./src/css/colors.css.php?module=<?php echo $module; ?>">
 	<link rel="shortcut icon" href="./src/img/favicon.ico" />
 	<meta name="viewport" content="width=1000, maximum-scale=1.0">
@@ -31,13 +32,13 @@
 						<a class="userDropdown" href="#"><?php echo GetConfig("dummyUser"); ?></a>
 						<ul class="dropdownMenu">
 							<div class="userOverview">
-								<div class="userPic" style="background-image: url('./src/img/dummyUser.png');"></div>
+								<div class="userPic" style="background-image: url('<?php echo GetRetinaGraphic("./src/img/dummyUser_50x50.png"); ?>');"></div>
 								<?php echo GetConfig("dummyUser"); ?><br />
 								<span class="role">Administrator</span>
 							</div>
-							<li onclick="location.href='#'"><img src="./src/img/icons/cog_16x16.png" />Account</li>
-							<li onclick="location.href='#'"><img src="./src/img/icons/compass_16x16.png" />Hilfe</li>
-							<li onclick="location.href='#'"><img src="./src/img/icons/arrow_left_alt1_16x16.png" />Logout</li>
+							<li onclick="location.href='#'"><img width="16px" height="16px" src="<?php echo GetRetinaGraphic("./src/img/icons/cog_16x16.png"); ?>" />Account</li>
+							<li onclick="location.href='#'"><img width="16px" height="16px" src="<?php echo GetRetinaGraphic("./src/img/icons/compass_16x16.png"); ?>" />Hilfe</li>
+							<li onclick="location.href='#'"><img width="16px" height="16px" src="<?php echo GetRetinaGraphic("./src/img/icons/arrow_left_alt1_16x16.png"); ?>" />Logout</li>
 						</ul>
 					</li>
 					<li><a href="#">Frontend</a></li>

@@ -38,5 +38,44 @@
 			}
 		}
 	}
+	
+	function DetectRetina() {
+		if(isset($_COOKIE["retina"])) {
+			$ratio = $_COOKIE["retina"];
+			if($ratio >= 2) {
+				$retina = true;
+			}
+		} else {
+			?>
+			<script type="text/javascript">
+			var retina = 'retina='+ window.devicePixelRatio +';'+ retina;
+			document.cookie = retina;
+			document.location.reload(true);
+			</script>
+			<?php
+		}
+		return $retina;
+	}
+	
+	function GetRetinaGraphic($path) {
+		$isRetina = DetectRetina();
+		if($isRetina == true) {
+			$array = explode("_", $path);
+			$size = array_pop($array);
+			$sizeArray = explode(".", $size);
+			$sizeNum = array_shift($sizeArray);
+			$sizeNum = explode("x", $sizeNum);
+			$sizeNum1 = array_shift($sizeNum);
+			$sizeNum2 = array_shift($sizeNum);
+			$retinaSize1 = $sizeNum1 * 2;
+			$retinaSize2 = $sizeNum2 * 2;
+			$array = implode("_", $array);
+			$newPath = $array."_".$retinaSize1."x".$retinaSize2.".".array_pop($sizeArray);
+			if(is_file($newPath)) {
+				$path = $newPath;
+			}
+		}
+		return $path;
+	}
 
 ?>
