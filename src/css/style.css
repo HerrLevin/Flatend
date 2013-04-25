@@ -83,19 +83,21 @@ ul.dropdownMenu:before {
 	border-width: 0 10px 10px 10px;
 	border-color: transparent transparent #ffffff transparent;
 	margin-top: -10px;
-	margin-left: 20px;
+	margin-left: 165px;
 }
 
 ul.dropdownMenu {
 	position: absolute;
 	background: #ffffff;
 	z-index: 1;
-	margin-top: 10px!important;
+	margin-top: 27px!important;
 	border-radius: 2px;
 	border: 1px solid #cccccc;
 	display: none;
 	width: 200px;
 	padding-bottom: 5px!important;
+	right: 0;
+	top: 0;
 }
 
 ul.dropdownMenu li, ul.dropdownMenu li a {
