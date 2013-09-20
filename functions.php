@@ -45,14 +45,6 @@
 			if($ratio >= 2) {
 				$retina = true;
 			}
-		} else {
-			?>
-			<script type="text/javascript">
-			var retina = 'retina='+ window.devicePixelRatio +';'+ retina;
-			document.cookie = retina;
-			document.location.reload(true);
-			</script>
-			<?php
 		}
 		return $retina;
 	}
@@ -77,5 +69,4 @@
 		}
 		return $path;
 	}
-
 ?>
