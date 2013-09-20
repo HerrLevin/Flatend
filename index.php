@@ -21,6 +21,10 @@
 	<link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:300,400" rel="stylesheet" type="text/css">
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="./src/js/dropdown.js"></script>
+	<script type="text/javascript">
+		var retina = 'retina='+ window.devicePixelRatio +';'+ retina;
+		document.cookie = retina;
+	</script>
 </head>
 <body>
 	<div id="header">
